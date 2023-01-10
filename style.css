@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    background-color:grey;
+    width:100vw;
+    position: absolute;
+}
+.navbaarCantainer{
+    display:grid;
+    height:3em;
+    grid-template-columns: repeat(5,1fr);
+    place-items:center;
+    background-color:#1393;
+    color:white;
+}
+a:link{
+    text-decoration:none;
+    color:white;
+    cursor: pointer;
+}
+.lineNavbaar{
+    display:none;
+    position:relative;
+
+}
+.lineNavbaar list-icon-btn{
+    display: none;
+    margin-top:1em;
+    position:absolute;
+}
+.navbaarCantainer span:hover{
+    color:lightgreen;
+    text-shadow: 1px;
+    transform-origin: 23px;
+    border-bottom: 4px  double white;
+    background-color: rgb(169, 109, 19);
+}
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+@media(max-width:600px) {
+    
+    *{
+        position: relative;
+    }
+    
+    body{
+        background-color: rgb(31, 31, 120);
+        overflow-x:none;
+        position:absolute;
+    }
+.navbaarCantainer{ 
+        display:grid;
+        grid-template-columns: 1fr;
+        height:100vh;
+        background-color:rgba(0,0,0,0.3);
+        padding-top:50px;
+        margin-left:-50em;
+        transition:0.02s;
+ }
+ .navbaarCantainer span{
+    margin:em;
+    padding:2em;
+    border-bottom: 4px  double white;
+    transition:all 0.5 ease-in-out;
+    z-index: 999;
+ }
+.lineNavbaar{
+    display: block;
+}
+.lineNavbaar list-icon-btn{
+    background-color:bisque;
+}
+
+.navbaarCantainer span:hover{
+    color:lightgreen;
+    text-shadow: 1px;
+    rotate:180deg ;
+    border-bottom: 4px  double white;
+
+
+}
+
+
+}
